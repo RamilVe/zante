@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Zante &#8211; Hotel Booking WordPress Theme</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/book-online.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" integrity="sha512-Mo79lrQ4UecW8OCcRUZzf0ntfMNgpOFR46Acj2ZtWO8vKhBvD79VCp3VOKSzk6TovLg5evL3Xi3u475Q/jMu4g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-6 py-2 d-flex align-items-center">
+                            <span>Welcome to Hotel Zante</span>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 d-flex justify-content-end align-items-center py-2">
+                        <div class="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:1300250296">1300250296</a>
+                        </div>
+                        <div class="email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="">contact@hotelzante.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="header-mobile">
+                    <div class="header-left">
+                        <img src="https://demo.zantetheme.com/wp-content/themes/zante/assets/images/logo.svg" alt="">
+                    </div>
+                    <div class="header-right">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div id="sidebar">
+                        <div class="close">
+                            <span>Close X</span>
+                        </div>
+                        <div class="title">
+                            <p>MENU</p>
+                        </div>
+                            <a href="index.html"><span>Home</span></a>
+                            <div class="dropdown">
+                                <span>Branches</span>
+                                <div class="dropdown-content">
+                                    <a href="branch.html">Zante Greece</a>
+                                    <a href="branch.html">Zante Italy</a>
+                                    <a href="branch.html">Zante UK</a>
+                                  </div>
+                            </div>
+                            <a href="rooms.html">Rooms</a>
+                            <a href="login.html">Login/Register</a>
+                            <a href="about.html">About us</a>
+                            <a href="contact.html">Contact us</a>
+                        <div class="book">
+                            <a class="btn" href="book-online.html"><i class="fa fa-calendar" aria-hidden="true"></i></i><span>BOOK ONLINE</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom" id="myHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="image col-lg-3">
+                        <a href="index.html">
+                            <img src="https://demo.zantetheme.com/wp-content/themes/zante/assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="navbar col-lg-9">
+                        <a href="index.html">Home</a>
+                        <div class="dropdown">
+                            <span>Branches</span>
+                            <div class="dropdown-content">
+                                <a href="branch.html">Zante Greece</a>
+                                <a href="branch.html">Zante Italy</a>
+                                <a href="branch.html">Zante UK</a>
+                              </div>
+                        </div>
+                        <a href="rooms.html">Rooms</a>
+                        <a href="login.html">Login/Register</a>
+                        <a href="about.html">About us</a>
+                        <a href="contact.html">Contact us</a>
+                        <a class="btn" href=""><i class="fa fa-calendar" aria-hidden="true"></i></i><span>BOOK ONLINE</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <button onclick="topFunction()" id="myBtn"><i class="fa-solid fa-angle-up"></i></button>
+        <div class="title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Book Online</h2>
+                        <ul id="" class="breadcrumb">
+                            <li class="item"><a href="index.html">Home /</a></li>
+                            <li class="item-current item">Book Online</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="left">
+                            <h5>Booking Details</h5>
+                            <section id="checka">                             
+                                    <div class="checking-a">
+                                        <div class="checka-content-box">
+                                            <!-- <input type="text" name="" id="daterange"> -->
+                                            <!-- <p id="demo"></p> -->
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                            <input type="button"  class="form-control rounded-0 text-start" id="daterange">
+                                                            <!-- <input type="date" id="dateInput" class="form-control rounded-0"> -->
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                            <input type="button" class="form-control rounded-0 text-start" id="addGuestBtn" value="Guest - 1">
+                                                            <div class="guest-member-content">
+                                                                <span></span>
+                                                                <div class="guest-title">
+                                                                    <div class="d-flex justify-content-between mb-3">
+                                                                        <div><b>Adults</b><br>Ages 18+</div>
+                                                                        <div class="guest-add-content">
+                                                                            <button id="adultsubGuestNum">-</button>
+                                                                            <strong id="adult-number">1</strong>
+                                                                            <button id="adultaddGuestNum">+</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <div><b>Children</b><br>Ages 4 - 18</div>
+                                                                        <div class="guest-add-content">
+                                                                            <button id="childsubGuestNum">-</button>
+                                                                            <strong id="child-number">0</strong>
+                                                                            <button id="childaddGuestNum">+</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </section>
+                            <div class="branch">
+                                <h5>Branch</h5>
+                                <div class="filter">
+                                    <div class="item">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Zante Greece</span>
+                                        <a href="branch.html">
+                                            <i class="far fa-question-circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Zante Italy</span>
+                                        <a href="branch.html">
+                                            <i class="far fa-question-circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Zante UK</span>
+                                        <a href="branch.html">
+                                            <i class="far fa-question-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <h5>Price</h5>
+                                <div class="range_container">
+                                    <div class="sliders_control">
+                                        <input id="fromSlider" type="range" value="0" min="0" max="210"/>
+                                        <input id="toSlider" type="range" value="210" min="0" max="210"/>
+                                    </div>
+                                    <div class="form_control">
+                                        <div class="form_control_container">
+                                            <div class="form_control_container__time">0</div>
+                                        </div>
+                                        <div class="form_control_container">
+                                            <div class="form_control_container__time to-input">210</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="included-services">
+                                <h5>Included Services</h5>
+                                <div class="services">
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Free-to-use Smartphone</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Mini Bar</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Sauna</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Breakfast</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Hair Dryer</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Coffee Maker</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Widescreen TV</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Air Conditioner</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Private Balcony</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Wi-Fi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="additional-services">
+                                <h5>Additional Services</h5>
+                                <div class="services">
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Sightseeing Tour</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Massage & Spa</span>
+                                    </div>
+                                    <div class="service">
+                                        <input type="checkbox" name="" id="">
+                                        <span>Airport Pickup</span>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="right">
+                            <div class="rooms-bar">
+                                <p>You found <strong>6</strong> rooms from €29</p>
+                                <select name="" id="">
+                                    <option value="">Sort by: Default</option>
+                                    <option value="">Sort by: Lowest Price</option>
+                                    <option value="">Sort by: Highest Price</option>
+                                </select>
+                            </div>
+                            <div class="rooms-list-view">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="https://demo.zantetheme.com/wp-content/uploads/2018/05/room-full-1-720x470.jpg" alt="">
+                                        </div>
+                                        <div class="room-details">
+                                            <a href="room-details.html"><h5>Deluxe Room</h5></a>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                        </div>
+                                        <div class="room-price-details">
+                                            <div class="room-price">
+                                                <div class="price">
+                                                    <p><span>€</span>199</p>
+                                                </div>
+                                                <p>PER NIGHT</p>
+                                            </div>
+                                            <div class="details">
+                                                <a class="btn" href="booking.html"><span>BOOK NOW</span>
+                                                </a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="https://demo.zantetheme.com/wp-content/uploads/2018/05/single-720x470.jpg" alt="">
+                                        </div>
+                                        <div class="room-details">
+                                            <a href="room-details.html"><h5>Single Room</h5></a>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                        </div>
+                                        <div class="room-price-details">
+                                            <div class="room-price">
+                                                <div class="price">
+                                                    <p><span>€</span>210</p>
+                                                </div>
+                                                <p>PER NIGHT</p>
+                                            </div>
+                                            <div class="details">
+                                                <a class="btn" href="booking.html"><span>BOOK NOW</span>
+                                                </a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="https://demo.zantetheme.com/wp-content/uploads/2018/05/1-720x470.jpg" alt="">
+                                        </div>
+                                        <div class="room-details">
+                                            <a href="room-details.html"><h5>Family Room</h5></a>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                        </div>
+                                        <div class="room-price-details">
+                                            <div class="room-price">
+                                                <div class="price">
+                                                    <p><span>€</span>189</p>
+                                                </div>
+                                                <p>PER NIGHT</p>
+                                            </div>
+                                            <div class="details">
+                                                <a class="btn" href="booking.html"><span>BOOK NOW</span>
+                                                </a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="https://demo.zantetheme.com/wp-content/uploads/2018/05/king-room-720x470.jpg" alt="">
+                                        </div>
+                                        <div class="room-details">
+                                            <a href="room-details.html"><h5>King Room</h5></a>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                        </div>
+                                        <div class="room-price-details">
+                                            <div class="room-price">
+                                                <div class="price">
+                                                    <p><span>€</span>111</p>
+                                                </div>
+                                                <p>PER NIGHT</p>
+                                            </div>
+                                            <div class="details">
+                                                <a class="btn" href="booking.html"><span>BOOK NOW</span>
+                                                </a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="https://demo.zantetheme.com/wp-content/uploads/2018/05/honeymoon-720x470.jpg" alt="">
+                                        </div>
+                                        <div class="room-details">
+                                            <a href="room-details.html"><h5>Honeymoon Room</h5></a>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                        </div>
+                                        <div class="room-price-details">
+                                            <div class="room-price">
+                                                <div class="price">
+                                                    <p><span>€</span>30</p>
+                                                </div>
+                                                <p>PER NIGHT</p>
+                                            </div>
+                                            <div class="details">
+                                                <a class="btn" href="booking.html"><span>BOOK NOW</span>
+                                                </a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="https://demo.zantetheme.com/wp-content/uploads/2018/05/double-720x470.jpg" alt="">
+                                        </div>
+                                        <div class="room-details">
+                                            <a href="room-details.html"><h5>Double Room</h5></a>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                        </div>
+                                        <div class="room-price-details">
+                                            <div class="room-price">
+                                                <div class="price">
+                                                    <p><span>€</span>89</p>
+                                                </div>
+                                                <p>PER NIGHT</p>
+                                            </div>
+                                            <div class="details">
+                                                <a class="btn" href="booking.html"><span>BOOK NOW</span>
+                                                </a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <img src="https://demo.zantetheme.com/wp-content/uploads/2019/09/logo_footer-2.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <h5>LATEST NEWS</h5>
+                        <ul>
+                            <li>Hotel Zante in pictures</li>
+                            <li>10 Things You Should Know</li>
+                            <li>Hotel Zante Weddings</li>
+                            <li>Live your myth in Greece</li>
+                            <li>Post without feuatured image</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <h5>USEFUL LINKS</h5>
+                        <ul>
+                            <li><a href="">Location</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">My Bookings</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact col-lg-3 col-md-6 col-12">
+                        <h5>CONTACT US</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i>25, Navagio Zakynthos, Greece</li>
+                            <li><i class="fa-solid fa-phone"></i>Phone: 123-12345678</li>
+                            <li><i class="fa-regular fa-envelope"></i>Email: contact@hotelzante.com</li>                        
+                        </ul>
+                        <div class="social-media">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-tripadvisor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom d-flex justify-content-between">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p>© 2023 Hotel Zante. Designed by <span>Eagle-Themes</span></p>
+                    </div>
+                    <div class="col-6">
+                        <div class="language">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <span>English</span>
+                        </div>    
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <!-- date range picker -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+     <!-- wow js -->
+     <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
